@@ -16,16 +16,16 @@
   WildCat Tickets is a C# Windows Forms application designed for movie ticket reservations in school cinemas. It allows users to browse movies, select showtimes, and reserve seats in real-time. The project leverages Firebase Firestore for database management and user authentication.
   
   ## Features
-  - Movie selection and showtime browsing
-  - Interactive seat reservation system
-  - User authentication and booking management
-  - Admin panel for managing movies, showtimes, and seats
-  - Real-time updates with Firebase Firestore
+  Movie selection and showtime browsing
+  Interactive seat reservation system
+  User authentication and booking management
+  Admin panel for managing movies, showtimes, and seats
+  Real-time updates with Firebase Firestore
   
   ## Technologies Used
-  - **C#** (Windows Forms, .NET Framework)
-  - **Firebase Firestore** (Database & Authentication)
-  - **Visual Studio 2022**
+  **C#** (Windows Forms, .NET Framework)
+  **Firebase Firestore** (Database & Authentication)
+  **Visual Studio 2022**
   
   ## Project Status
   This project is currently in development as a learning initiative to explore C# application development, database integration, and real-time data management.
