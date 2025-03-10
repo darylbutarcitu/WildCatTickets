@@ -11,9 +11,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="40" alt="firebase logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuget/nuget-original.svg" height="40" alt="nuget logo"  />
-
-  ###
-![Repo Views](https://shields.io/badge/dynamic/json?color=blue&label=Views&query=count&url=https://api.github.com/repos/darylbutarcitu/WildCatTickets)
   
   ## Overview
   WildCat Tickets is a C# Windows Forms application designed for movie ticket reservations in school cinemas. It allows users to browse movies, select showtimes, and reserve seats in real-time. The project leverages Firebase Firestore for database management and user authentication.
