@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Krypton.Toolkit;
 
 namespace WildCatTickets
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard : KryptonForm
     {
         public Dashboard()
         {
             InitializeComponent();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
