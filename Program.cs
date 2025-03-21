@@ -16,7 +16,10 @@ namespace WildCatTickets
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+            Application.Run(new LoginForm());
+            //Application.Run(new DashboardForm("Testing"));
+            //Application.Run(new ProfileForm("Testing"));
+
         }
     }
 }

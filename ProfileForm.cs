@@ -11,17 +11,16 @@ using Krypton.Toolkit;
 
 namespace WildCatTickets
 {
-    public partial class Dashboard : KryptonForm
+    public partial class ProfileForm: KryptonForm
     {
-        public Dashboard()
+        public ProfileForm(string username)
         {
             InitializeComponent();
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void ProfileForm_Load(object sender, EventArgs e)
         {
-
+        
         }
-
     }
 }
