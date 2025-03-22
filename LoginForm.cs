@@ -20,7 +20,7 @@ namespace WildCatTickets
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-           
+           this.Size = new Size(665, 345);
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace WildCatTickets
             string username = idNumberTbx.Text;
             string password = passwordTbx.Text;
 
-            if (username == "admin" && password == "1234") // Dummy login check
+            if (username == "24-5865-705" && password == "1234") // Dummy login check
             {
                 DashboardForm dashboard = new DashboardForm(username);
                 this.Hide();

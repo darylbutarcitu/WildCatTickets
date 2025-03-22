@@ -35,7 +35,7 @@
             this.logoutBtn = new Krypton.Toolkit.KryptonButton();
             this.settingsBtn = new Krypton.Toolkit.KryptonButton();
             this.myTicketsBtn = new Krypton.Toolkit.KryptonButton();
-            this.upcomingBtn = new Krypton.Toolkit.KryptonButton();
+            this.eventsBtn = new Krypton.Toolkit.KryptonButton();
             this.browseBtn = new Krypton.Toolkit.KryptonButton();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
             this.profileBtn = new Krypton.Toolkit.KryptonButton();
@@ -111,14 +111,14 @@
             this.kryptonPanel1.Controls.Add(this.logoutBtn);
             this.kryptonPanel1.Controls.Add(this.settingsBtn);
             this.kryptonPanel1.Controls.Add(this.myTicketsBtn);
-            this.kryptonPanel1.Controls.Add(this.upcomingBtn);
+            this.kryptonPanel1.Controls.Add(this.eventsBtn);
             this.kryptonPanel1.Controls.Add(this.browseBtn);
             this.kryptonPanel1.Controls.Add(this.kryptonPictureBox1);
             this.kryptonPanel1.Controls.Add(this.profileBtn);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(270, 675);
+            this.kryptonPanel1.Size = new System.Drawing.Size(270, 663);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.kryptonPanel1.TabIndex = 0;
@@ -221,6 +221,7 @@
             this.settingsBtn.TabIndex = 10;
             this.settingsBtn.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.settingsBtn.Values.Text = "Settings";
+            this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
             // 
             // myTicketsBtn
             // 
@@ -272,55 +273,56 @@
             this.myTicketsBtn.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.myTicketsBtn.Values.Text = "My Tickets";
             // 
-            // upcomingBtn
+            // eventsBtn
             // 
-            this.upcomingBtn.Location = new System.Drawing.Point(24, 386);
-            this.upcomingBtn.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.upcomingBtn.Name = "upcomingBtn";
-            this.upcomingBtn.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.OverrideFocus.Border.Rounding = 15F;
-            this.upcomingBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.upcomingBtn.Size = new System.Drawing.Size(226, 54);
-            this.upcomingBtn.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateCommon.Border.Rounding = 15F;
-            this.upcomingBtn.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.upcomingBtn.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateDisabled.Border.Rounding = 15F;
-            this.upcomingBtn.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateNormal.Border.Rounding = 15F;
-            this.upcomingBtn.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.upcomingBtn.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StatePressed.Border.Rounding = 15F;
-            this.upcomingBtn.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
-            this.upcomingBtn.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.upcomingBtn.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.upcomingBtn.StateTracking.Border.Rounding = 15F;
-            this.upcomingBtn.TabIndex = 8;
-            this.upcomingBtn.Values.DropDownArrowColor = System.Drawing.Color.Empty;
-            this.upcomingBtn.Values.Text = "Coming Soon";
+            this.eventsBtn.Location = new System.Drawing.Point(24, 386);
+            this.eventsBtn.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.eventsBtn.Name = "eventsBtn";
+            this.eventsBtn.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.OverrideFocus.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.OverrideFocus.Border.Rounding = 15F;
+            this.eventsBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.eventsBtn.Size = new System.Drawing.Size(226, 54);
+            this.eventsBtn.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateCommon.Border.Rounding = 15F;
+            this.eventsBtn.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eventsBtn.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateDisabled.Border.Rounding = 15F;
+            this.eventsBtn.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateNormal.Border.Rounding = 15F;
+            this.eventsBtn.StateNormal.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.eventsBtn.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StatePressed.Border.Rounding = 15F;
+            this.eventsBtn.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(180)))), ((int)(((byte)(21)))));
+            this.eventsBtn.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.eventsBtn.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.eventsBtn.StateTracking.Border.Rounding = 15F;
+            this.eventsBtn.TabIndex = 8;
+            this.eventsBtn.Values.DropDownArrowColor = System.Drawing.Color.Empty;
+            this.eventsBtn.Values.Text = "Events";
+            this.eventsBtn.Click += new System.EventHandler(this.eventsBtn_Click);
             // 
             // browseBtn
             // 
@@ -437,12 +439,14 @@
             // kryptonPanelContainer
             // 
             this.kryptonPanelContainer.AutoScroll = true;
+            this.kryptonPanelContainer.AutoScrollMargin = new System.Drawing.Size(100, 100);
+            this.kryptonPanelContainer.AutoScrollMinSize = new System.Drawing.Size(0, 663);
             this.kryptonPanelContainer.AutoSize = true;
             this.kryptonPanelContainer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kryptonPanelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanelContainer.Location = new System.Drawing.Point(270, 0);
             this.kryptonPanelContainer.Name = "kryptonPanelContainer";
-            this.kryptonPanelContainer.Size = new System.Drawing.Size(1000, 675);
+            this.kryptonPanelContainer.Size = new System.Drawing.Size(1004, 663);
             this.kryptonPanelContainer.StateNormal.Color1 = System.Drawing.Color.Goldenrod;
             this.kryptonPanelContainer.TabIndex = 1;
             // 
@@ -452,7 +456,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Goldenrod;
             this.BlurValues.Opacity = ((byte)(50));
-            this.ClientSize = new System.Drawing.Size(1270, 675);
+            this.ClientSize = new System.Drawing.Size(1274, 663);
             this.Controls.Add(this.kryptonPanelContainer);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -480,7 +484,7 @@
         private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
         private Krypton.Toolkit.KryptonButton browseBtn;
         private Krypton.Toolkit.KryptonButton myTicketsBtn;
-        private Krypton.Toolkit.KryptonButton upcomingBtn;
+        private Krypton.Toolkit.KryptonButton eventsBtn;
         private Krypton.Toolkit.KryptonButton settingsBtn;
         private Krypton.Toolkit.KryptonButton logoutBtn;
         private Krypton.Toolkit.KryptonPanel kryptonPanelContainer;

@@ -42,6 +42,7 @@ namespace WildCatTickets
             this.loginBtn = new Krypton.Toolkit.KryptonButton();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.signupBtn = new Krypton.Toolkit.KryptonButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // kryptonMainPalette
@@ -104,7 +105,7 @@ namespace WildCatTickets
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonLabel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(300, 300);
+            this.kryptonLabel1.Size = new System.Drawing.Size(300, 288);
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonLabel1.Values.Image")));
             this.kryptonLabel1.Values.Text = "WildCat Tickets\r\n";
@@ -114,7 +115,7 @@ namespace WildCatTickets
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(306, 9);
+            this.label1.Location = new System.Drawing.Point(256, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 20);
             this.label1.TabIndex = 1;
@@ -274,11 +275,24 @@ namespace WildCatTickets
             this.signupBtn.Values.DropDownArrowColor = System.Drawing.Color.Empty;
             this.signupBtn.Values.Text = "Sign Up";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(523, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Change to Kiosk Mode";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // LoginForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(668, 300);
+            this.ClientSize = new System.Drawing.Size(655, 288);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.signupBtn);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.loginBtn);
@@ -316,6 +330,7 @@ namespace WildCatTickets
         private KryptonButton loginBtn;
         private System.Windows.Forms.Label passwordLabel;
         private KryptonButton signupBtn;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -42,9 +42,18 @@ namespace WildCatTickets
             LoadForm(new BrowseForm(loggedInUser));
         }
 
+        private void eventsBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         private void myTicketsBtn_Click(object sender, EventArgs e)
         {
-            LoadForm(new LoginForm());
+            LoadForm(new BrowseForm(loggedInUser));
+        }
+        private void settingsBtn_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
@@ -56,5 +65,6 @@ namespace WildCatTickets
                 this.Close();
             }
         }
+
     }
 }
